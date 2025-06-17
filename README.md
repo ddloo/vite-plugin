@@ -17,13 +17,13 @@
 
 **安装：**
 ```bash
-npm install vite-plugin-decorator-metadata --save-dev
+npm install vite-plugin-decorator-metadata-param --save-dev
 ```
 
 **使用：**
 ```typescript
 import { defineConfig } from 'vite'
-import decoratorMetadata from 'vite-plugin-decorator-metadata'
+import decoratorMetadata from 'vite-plugin-decorator-metadata-param'
 
 export default defineConfig({
   plugins: [
