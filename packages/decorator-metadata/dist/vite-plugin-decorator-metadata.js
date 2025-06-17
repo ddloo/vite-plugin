@@ -7,9 +7,10 @@ import * as ts from "typescript";
 export function viteDecoratorMetadata() {
     return {
         name: "vite-decorator-metadata",
-        enforce: "pre", // 确保在 TypeScript 解析之前执行
+        // 确保在 TypeScript 解析之前执行
+        enforce: "pre",
         transform(code, id) {
-            // 仅处理包含装饰器的 TypeScript 文件
+            // 仅处理包含装饰器的 TypeScript 文件, 如果使用 @，默认认为用了装饰器
             if (!id.match(/\.tsx?$/) || !/@\w+/.test(code)) {
                 return null;
             }
@@ -57,7 +58,6 @@ function processDecorators(source, filePath) {
 }
 /**
  * TypeScript 标准 __metadata 辅助函数
- * 从 ts 那边复制过来的
  */
 const METADATA_HELPER = `var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);

@@ -15,7 +15,7 @@
   },
   "include": [
     "index.ts",
-    "vite-decorator-metadata.ts"
+    "vite-plugin-decorator-metadata.ts"
   ],
   "exclude": [
     "node_modules",
