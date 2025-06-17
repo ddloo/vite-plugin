@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-decorator-metadata",
-  "version": "1.0.0",
+  "version": "0.0.12",
   "description": "A Vite plugin that automatically injects TypeScript decorator metadata to solve esbuild's lack of emitDecoratorMetadata support",
   "keywords": [
     "vite",
