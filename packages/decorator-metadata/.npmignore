@@ -1,0 +1,19 @@
+# 源码文件（只发布构建后的dist目录）
+*.ts
+!dist/**/*.d.ts
+
+# 配置文件
+tsconfig.json
+vite.config.ts
+.vscode/
+.idea/
+
+# Git 和版本控制
+.git/
+.gitignore
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

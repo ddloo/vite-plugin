@@ -1,0 +1,43 @@
+{
+  "name": "vite-plugin-decorator-metadata",
+  "version": "1.0.0",
+  "description": "A Vite plugin that automatically injects TypeScript decorator metadata to solve esbuild's lack of emitDecoratorMetadata support",
+  "keywords": [
+    "vite",
+    "plugin",
+    "typescript",
+    "decorator",
+    "metadata",
+    "reflect-metadata",
+    "esbuild"
+  ],
+  "author": "ddloo <1249129864@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddloo/vite-plugin.git"
+  },
+  "homepage": "https://github.com/ddloo/vite-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/ddloo/vite-plugin/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "vite": "^5.1.6"
+  }
+}
